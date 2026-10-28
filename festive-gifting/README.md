@@ -4,6 +4,45 @@ A luxurious, high-performance, and responsive e-commerce landing page crafted fo
 
 ---
 
+## 📸 Visual Previews & Screenshots
+
+Here is a visual walkthrough of the key sections and interactive experiences of the Shubhika landing page:
+
+### 1. Hero Section & Cinematic Hamper Showcase
+Festive announcement ticker, artisanal brand typography, ambient warm lighting, and luxury trunk hamper showcase with primary and secondary call-to-actions.
+
+![Shubhika Hero Section](screenshots/01-hero-section.png)
+
+---
+
+### 2. Shop by Festive Category
+Curated categorizations highlighting **Artisanal Mithai**, **Royal Dry Fruits**, and **Heritage Farsan** with high-resolution imagery and badge markers.
+
+![Shop by Festive Category](screenshots/02-festive-categories.png)
+
+---
+
+### 3. Festive Bestsellers & Curated Keepsake Boxes
+Spotlight product grid featuring bestselling festive boxes such as the **Kohinoor Grand Diwali Trunk**, **Gulab Pista Sandesh & Baklava Box**, and bespoke keepsake trunks with wax-sealed notes.
+
+![Our Festive Bestsellers](screenshots/03-festive-bestsellers.png)
+
+---
+
+### 4. Brand Heritage & Culinary Philosophy
+Editorial split narrative detailing the brand's commitment to small-batch production, pure A2 bilona cow ghee, unrefined raw cane sugars, and generational recipes.
+
+![Brand Story & Craftsmanship](screenshots/04-brand-story-craftsmanship.png)
+
+---
+
+### 5. Interactive Corporate & Bulk Gifting Modal
+Client-side interactive modal for corporate orders, offering bulk quantity estimation, custom metallic foil-stamping options, and contact validation.
+
+![Corporate & Bulk Gifting Enquiry Modal](screenshots/05-corporate-bulk-gifting-modal.png)
+
+---
+
 ## ⚡ Tech Stack
 
 | Category | Technology | Description |
@@ -44,6 +83,13 @@ A luxurious, high-performance, and responsive e-commerce landing page crafted fo
 
 ```text
 festive-gifting/
+├── screenshots/                          # High-resolution captures of the live landing page
+│   ├── 01-hero-section.png               # Hero showcase with festive trunks & CTAs
+│   ├── 02-festive-categories.png         # Shop by category (Mithai, Dry Fruits, Farsan)
+│   ├── 03-festive-bestsellers.png        # Bestseller trunks with wax seal notes
+│   ├── 04-brand-story-craftsmanship.png  # Pure A2 bilona ghee & heritage craftsmanship
+│   └── 05-corporate-bulk-gifting-modal.png # Interactive corporate inquiry modal
+│
 ├── public/                               # Static assets served as-is
 │   └── assets/                           # High-resolution product images, brand photography & banners
 │
@@ -154,9 +200,9 @@ cd "D:\BlackVein_Projects\Categories-clothing-food\Food & Bevarages Landing Page
 ---
 
 ### 3. Install Dependencies
-Install all required packages using npm:
+Install all required packages:
 ```bash
-npm install
+npm install --legacy-peer-deps
 ```
 *(Alternatively, if you use Bun: `bun install`)*
 
@@ -166,6 +212,10 @@ npm install
 Run the local Vite development server:
 ```bash
 npm run dev
+```
+*(Or directly with Node if running in environments with special folder path characters):*
+```bash
+node ./node_modules/vite/bin/vite.js --port=3000 --host=0.0.0.0
 ```
 
 Once started, open your browser and navigate to:
